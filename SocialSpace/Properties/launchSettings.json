@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "SocialSpace (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "SocialSpace (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
