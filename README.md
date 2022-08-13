@@ -1,15 +1,8 @@
 # SocialSpace
-SocialSpace is an app designed to merge social media experience in one place. There might be bugs as it's currently under development.  
+SocialSpace is an app designed to merge social media experience in one place. You can access the most popular social media sites from one place in few clicks. There might be bugs as it's currently under development.  
 
 ## Screenshots
-<a href="https://github.com/volkanogeday/socialspace">
-  <img src="./screenshots.png" />
-</a>
-
-## Installation
-1- Download SocialSpace-0.6.3.exe from releases section.  
-2- Follow the instructions that program gives.  
-Note: Sometimes powershell window can open minimized so if you see it's opened, please switch to powershell window and continue to follow the instructions.  
+<img src="./screenshots.png" />
 
 ## Changelogs
 1.0.0: Initial stable release.  
