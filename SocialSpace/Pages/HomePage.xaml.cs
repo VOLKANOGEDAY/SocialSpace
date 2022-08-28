@@ -2,10 +2,10 @@
 
 namespace SocialSpace
 {
-    public sealed partial class SettingsPage : Page
+    public sealed partial class HomePage : Page
     {
         //initialize
-        public SettingsPage()
+        public HomePage()
         {
             this.InitializeComponent();
         }

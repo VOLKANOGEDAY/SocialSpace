@@ -5,12 +5,13 @@
   xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
   xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
   xmlns:uap3="http://schemas.microsoft.com/appx/manifest/uap/windows10/3"
-  IgnorableNamespaces="uap uap3 rescap">
+  xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
+  IgnorableNamespaces="uap uap3 rescap mp">
 
   <Identity
-    Name="b982c7b2-ba89-40c0-b97b-9b4f2728395a"
+    Name="42063VOLKANOGEDAY.54834662CC7AB"
     Publisher="CN=968DF8E5-7085-45D5-B8D9-0F8ED93008CA"
-    Version="0.6.3.0" />
+    Version="0.7.2.0" />
 
   <Properties>
     <DisplayName>SocialSpace</DisplayName>
@@ -19,8 +20,8 @@
   </Properties>
 
   <Dependencies>
-    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.17763.0" MaxVersionTested="10.0.19041.0" />
-    <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.17763.0" MaxVersionTested="10.0.19041.0" />
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.19041.0" MaxVersionTested="10.0.22000.0" />
+    <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.19041.0" MaxVersionTested="10.0.22000.0" />
   </Dependencies>
 
   <Resources>

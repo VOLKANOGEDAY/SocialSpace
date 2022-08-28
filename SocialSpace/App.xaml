@@ -1,15 +1,21 @@
 ﻿<Application
+    RequestedTheme="Dark"
     x:Class="SocialSpace.App"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
     
     <Application.Resources>
         <ResourceDictionary>
-            
+
             <ResourceDictionary.MergedDictionaries>
+
                 <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" />
+
+                <!-- settings ui -->
+                <ResourceDictionary Source="ms-appx:///SettingsUI/Themes/Generic.xaml"/>
+
             </ResourceDictionary.MergedDictionaries>
-            
+
             <!-- transparent title bar -->
             <SolidColorBrush x:Key="WindowCaptionBackground" Color="Transparent"/>
             <SolidColorBrush x:Key="WindowCaptionBackgroundDisabled" Color="Transparent"/>

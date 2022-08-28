@@ -5,18 +5,200 @@
     xmlns:local="using:SocialSpace"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:SettingsUI.Controls"
     mc:Ignorable="d">
 
-    <Grid Margin="48,36,48,36">
-        <StackPanel>
-            
+    <ScrollViewer Margin="0,36,0,0">
+        
+        <StackPanel Margin="48,0,48,36">
+
             <!-- header -->
             <TextBlock
                 FontSize="40"
                 FontWeight="SemiBold"
                 Text="Settings"/>
-            
+
+            <!-- personalization settings -->
+            <TextBlock
+                FontSize="20"
+                FontWeight="SemiBold"
+                Margin="0,16,0,0"
+                Text="Personalization"/>
+
+            <!-- theme settings -->
+            <Expander
+                Margin="0,4,0,0"
+                HorizontalAlignment="Stretch"
+                HorizontalContentAlignment="Left">
+
+                <Expander.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <FontIcon FontSize="16" Margin="0,0,12,0" Glyph="&#xe793;"/>
+                        <TextBlock Text="Theme"/>
+                    </StackPanel>
+                </Expander.Header>
+
+                <Expander.Content>
+                    <StackPanel Margin="16">
+                        <RadioButton Content="System Default"/>
+                        <RadioButton Margin="0,8,0,8" Content="Light"/>
+                        <RadioButton Content="Dark"/>
+                    </StackPanel>
+                </Expander.Content>
+
+            </Expander>
+
+            <!-- accent color settings -->
+            <controls:SettingExpander
+                Margin="0,4,0,0"
+                HorizontalAlignment="Stretch"
+                HorizontalContentAlignment="Left">
+
+                <controls:SettingExpander.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <FontIcon FontSize="16" Margin="0,0,12,0" Glyph="&#xe790;"/>
+                        <TextBlock Text="Colors"/>
+                    </StackPanel>
+                </controls:SettingExpander.Header>
+
+                <controls:SettingExpander.Content>
+                    <ScrollViewer HorizontalScrollBarVisibility="Auto">
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="16">
+                            <Rectangle Fill="{ThemeResource SystemAccentColor}" Width="56" Height="56" Margin="2" RadiusX="4" RadiusY="4"/>
+                            <Rectangle Fill="#D13438" Width="56" Height="56" Margin="2" RadiusX="4" RadiusY="4"/>
+                            <Rectangle Fill="#F7630C" Width="56" Height="56" Margin="2" RadiusX="4" RadiusY="4"/>
+                            <Rectangle Fill="#FF8C00" Width="56" Height="56" Margin="2" RadiusX="4" RadiusY="4"/>
+                            <Rectangle Fill="#FFB900" Width="56" Height="56" Margin="2" RadiusX="4" RadiusY="4"/>
+                            <Rectangle Fill="#498205" Width="56" Height="56" Margin="2" RadiusX="4" RadiusY="4"/>
+                            <Rectangle Fill="#107C10" Width="56" Height="56" Margin="2" RadiusX="4" RadiusY="4"/>
+                            <Rectangle Fill="#00B7C3" Width="56" Height="56" Margin="2" RadiusX="4" RadiusY="4"/>
+                            <Rectangle Fill="#0078D4" Width="56" Height="56" Margin="2" RadiusX="4" RadiusY="4"/>
+                            <Rectangle Fill="#744DA9" Width="56" Height="56" Margin="2" RadiusX="4" RadiusY="4"/>
+                            <Rectangle Fill="#E3008C" Width="56" Height="56" Margin="2" RadiusX="4" RadiusY="4"/>
+                            <Rectangle Fill="#EA005E" Width="56" Height="56" Margin="2" RadiusX="4" RadiusY="4"/>
+                            <Rectangle Fill="#515C6B" Width="56" Height="56" Margin="2" RadiusX="4" RadiusY="4"/>
+                            <Rectangle Fill="{ThemeResource AccentFillColorDisabledBrush}" Width="56" Height="56" Margin="2" RadiusX="4" RadiusY="4"/>
+                        </StackPanel>
+                    </ScrollViewer>
+                </controls:SettingExpander.Content>
+
+            </controls:SettingExpander>
+
+            <!-- shortcut settings -->
+            <TextBlock
+                FontSize="20"
+                FontWeight="SemiBold"
+                Margin="0,16,0,0"
+                Text="Shortcuts"/>
+
+            <!-- shortcut holder -->
+            <ListView CanDrag="True" AllowDrop="True" CanReorderItems="True">
+            </ListView>
+
+            <!-- webview settings -->
+            <TextBlock
+                FontSize="20"
+                FontWeight="SemiBold"
+                Text="Browser Data"
+                Margin="0,16,0,0"/>
+
+            <!-- clear cache -->
+            <controls:Setting
+                Header="Clear Cache"
+                Margin="0,4,0,0"
+                Padding="16,4,8,4">
+                    
+                <controls:Setting.Content>
+                    <AppBarButton Width="36" Height="44">
+                        <AppBarButton.Icon>
+                        <FontIcon Margin="0,-2,0,2" Glyph="&#xe74d;"/>
+                    </AppBarButton.Icon>
+                    </AppBarButton>
+                </controls:Setting.Content>
+                    
+            </controls:Setting>
+
+            <!-- clear history -->
+            <controls:Setting
+                Header="Clear History"
+                Margin="0,4,0,0"
+                Padding="16,4,8,4">
+
+                <controls:Setting.Content>
+                    <AppBarButton Width="36" Height="44">
+                        <AppBarButton.Icon>
+                            <FontIcon Margin="0,-2,0,2" Glyph="&#xe74d;"/>
+                        </AppBarButton.Icon>
+                    </AppBarButton>
+                </controls:Setting.Content>
+
+            </controls:Setting>
+
+            <!-- clear passwords -->
+            <controls:Setting
+                Header="Clear Passwords"
+                Margin="0,4,0,0"
+                Padding="16,4,8,4">
+
+                <controls:Setting.Content>
+                    <AppBarButton Width="36" Height="44">
+                        <AppBarButton.Icon>
+                            <FontIcon Margin="0,-2,0,2" Glyph="&#xe74d;"/>
+                        </AppBarButton.Icon>
+                    </AppBarButton>
+                </controls:Setting.Content>
+
+            </controls:Setting>
+
+            <!-- clear all data -->
+            <controls:Setting
+                Header="Clear All Data"
+                Margin="0,4,0,0"
+                Padding="16,4,8,4">
+
+                <controls:Setting.Content>
+                    <AppBarButton Width="36" Height="44">
+                        <AppBarButton.Icon>
+                            <FontIcon Margin="0,-2,0,2" Glyph="&#xe74d;"/>
+                        </AppBarButton.Icon>
+                    </AppBarButton>
+                </controls:Setting.Content>
+
+            </controls:Setting>
+
+            <!-- startup settings -->
+            <TextBlock
+                FontSize="20"
+                FontWeight="SemiBold"
+                Margin="0,16,0,0"
+                Text="Startup"/>
+
+            <!-- launch at startup -->
+            <controls:Setting
+                Header="Launch SocialSpace at Startup"
+                Margin="0,4,0,0"
+                Padding="16,4,8,4">
+                
+                <controls:Setting.Content>
+                    <ToggleSwitch OffContent="" OnContent="" Margin="0,0,-106,0"/>
+                </controls:Setting.Content>
+                
+            </controls:Setting>
+
+            <!-- minimize to tray -->
+            <controls:Setting
+                Header="Minimize SocialSpace to the System Tray"
+                Margin="0,4,0,0"
+                Padding="16,4,8,4">
+
+                <controls:Setting.Content>
+                    <ToggleSwitch OffContent="" OnContent="" Margin="0,0,-106,0"/>
+                </controls:Setting.Content>
+                
+            </controls:Setting>
+
         </StackPanel>
-    </Grid>
+
+    </ScrollViewer>
     
 </Page>

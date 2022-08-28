@@ -1,6 +1,6 @@
 ﻿<windowex:WindowEx
     Title="SocialSpace"
-    MinWidth="840" MinHeight="560"
+    MinWidth="720" MinHeight="480"
     x:Class="SocialSpace.MainWindow"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -29,6 +29,7 @@
             x:Name="NavView"
             IsPaneToggleButtonVisible="True"
             IsBackButtonVisible="Collapsed"
+            IsSettingsVisible="False"
             IsPaneOpen="False"
             AlwaysShowHeader="False"
             CompactPaneLength="44"
@@ -64,8 +65,14 @@
             
             <!-- navigation items -->
             <NavigationView.MenuItems>
+
+                <NavigationViewItem Content="Home" Tag="HomePage" Margin="0,4,0,0">
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xea8a;"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
                 
-                <NavigationViewItem Content="Discord" Tag="DiscordPage" Margin="0,4,0,0">
+                <NavigationViewItem Content="Discord" Tag="DiscordPage">
                     <NavigationViewItem.Icon>
                         <FontIcon FontFamily="/Assets/FontIconsBrands.ttf#FontIconsBrands" Glyph="&#xf001;"/>
                     </NavigationViewItem.Icon>
@@ -142,73 +149,18 @@
                         <FontIcon FontFamily="/Assets/FontIconsBrands.ttf#FontIconsBrands" Glyph="&#xf013;"/>
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
-                
+
                 <NavigationViewItem Content="YouTube" Tag="YoutubePage">
                     <NavigationViewItem.Icon>
                         <FontIcon FontFamily="/Assets/FontIconsBrands.ttf#FontIconsBrands" Glyph="&#xf014;"/>
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
-                
+
             </NavigationView.MenuItems>
 
             <!-- content frame -->
-            <Grid>
-                <Frame x:Name="ContentFrame">
+            <Frame x:Name="ContentFrame" />
 
-                    <!-- main page -->
-                    <StackPanel Margin="48,36,48,36">
-                        
-                        <TextBlock
-                            FontSize="28"
-                            FontWeight="SemiBold"
-                            Margin="0,0,0,12"
-                            Text="Welcome!"/>
-                        
-                        <TextBlock
-                            FontSize="14"
-                            FontWeight="Normal"
-                            Margin="0,0,0,36"
-                            Text="Welcome to SocialSpace! This app is designed to merge social media experience in one place."/>
-                        
-                        <TextBlock
-                            FontSize="28"
-                            FontWeight="SemiBold"
-                            Margin="0,0,0,12"
-                            Text="Changelogs"/>
-
-                        <TextBlock
-                            FontSize="14"
-                            Margin="0,0,0,12">
-                            <Run FontWeight="SemiBold">0.6.4: </Run>
-                            <Run FontWeight="Normal"> Github and Gmail page added, reworked page controls, small ui changes, first github public beta.</Run>
-                        </TextBlock>
-
-                        <TextBlock
-                            FontSize="14"
-                            Margin="0,0,0,12">
-                            <Run FontWeight="SemiBold">0.5.3: </Run>
-                            <Run FontWeight="Normal"> Migrated to WindowsAppSDK, fixed page overlapping and file picker, reworked icons and ui.</Run>
-                        </TextBlock>
-
-                        <TextBlock
-                            FontSize="14"
-                            Margin="0,0,0,12">
-                            <Run FontWeight="SemiBold">0.1.1: </Run> 
-                            <Run FontWeight="Normal"> Release for beta testers.</Run>
-                        </TextBlock>
-                        
-                        <TextBlock
-                            FontSize="14"
-                            Margin="0,0,0,12">
-                            <Run FontWeight="SemiBold">0.1.0: </Run> 
-                            <Run FontWeight="Normal"> Initial release.</Run>
-                        </TextBlock>
-                        
-                    </StackPanel>
-                        
-                </Frame>
-            </Grid>
-            
         </NavigationView>
         
     </Grid>

@@ -18,15 +18,15 @@
         <StackPanel Height="44" VerticalAlignment="Top" HorizontalAlignment="Left" Orientation="Horizontal">
             
             <Button x:Name="Back" Height="32" Width="32" HorizontalAlignment="Right" Margin="6,0,0,0" Padding="0,0,0,0" VerticalAlignment="Center" Click="Back_Click">
-                <FontIcon FontFamily="Segoe MDL2 Assets" FontSize="12" Glyph="&#xe76b;"/>
+                <FontIcon FontSize="16" Glyph="&#xe76b;"/>
             </Button>
             
             <Button x:Name="Forward" Height="32" Width="32" HorizontalAlignment="Right" Margin="6,0,0,0" Padding="0,0,0,0" VerticalAlignment="Center" Click="Forward_Click">
-                <FontIcon FontFamily="Segoe MDL2 Assets" FontSize="12" Glyph="&#xe76c;"/>
+                <FontIcon FontSize="16" Glyph="&#xe76c;"/>
             </Button>
             
             <Button x:Name="Refresh" Height="32" Width="32" HorizontalAlignment="Right" Margin="6,0,0,0" Padding="0,0,0,0" VerticalAlignment="Center" Click="Refresh_Click">
-                <FontIcon FontFamily="Segoe MDL2 Assets" FontSize="12" Glyph="&#xe72c;"/>
+                <FontIcon FontSize="12" Glyph="&#xe72c;"/>
             </Button>
             
         </StackPanel>

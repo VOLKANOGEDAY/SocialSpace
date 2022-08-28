@@ -35,12 +35,14 @@ namespace SocialSpace
             ("TwitterPage", typeof(TwitterPage)),
             ("WhatsappPage", typeof(WhatsappPage)),
             ("YoutubePage", typeof(YoutubePage)),
+            ("HomePage", typeof(HomePage)),
         };
 
         //navigation
         private void NavView_Loaded(object sender, RoutedEventArgs e)
         {
             ContentFrame.Navigated += On_Navigated;
+            NavView_Navigate("HomePage", new Microsoft.UI.Xaml.Media.Animation.EntranceNavigationTransitionInfo());
         }
 
         private void NavView_ItemInvoked(NavigationView sender, NavigationViewItemInvokedEventArgs args)

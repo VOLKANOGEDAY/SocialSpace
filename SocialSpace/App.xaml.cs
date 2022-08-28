@@ -10,7 +10,6 @@ namespace SocialSpace
         public App()
         {
             this.InitializeComponent();
-            RequestedTheme = ApplicationTheme.Dark;
         }
 
         protected override void OnLaunched(Microsoft.UI.Xaml.LaunchActivatedEventArgs args)

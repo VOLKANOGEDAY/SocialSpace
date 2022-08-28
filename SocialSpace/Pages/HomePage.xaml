@@ -1,0 +1,60 @@
+﻿<Page
+    x:Class="SocialSpace.HomePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <ScrollViewer Margin="0,36,0,0">
+
+        <StackPanel Margin="48,0,48,36">
+
+            <!-- welcome -->
+            <TextBlock
+                FontSize="28"
+                FontWeight="SemiBold"
+                LineHeight="24"
+                TextWrapping="Wrap"
+                Margin="0,0,0,4"
+                Text="Welcome!"/>
+
+            <TextBlock
+                FontSize="14"
+                FontWeight="Normal"
+                LineHeight="24"
+                TextWrapping="Wrap"
+                Margin="0,0,0,36"
+                Text="Welcome to SocialSpace! This app is designed to merge social media experience in one place."/>
+
+            <!-- changelogs -->
+            <TextBlock
+                FontSize="28"
+                FontWeight="SemiBold"
+                LineHeight="24"
+                TextWrapping="Wrap"
+                Margin="0,0,0,14"
+                Text="Changelogs"/>
+
+            <TextBlock
+                FontSize="14"
+                LineHeight="24"
+                TextWrapping="Wrap"
+                Margin="0,0,0,12">
+                <Run FontWeight="SemiBold">0.7.2: </Run>
+                <Run FontWeight="Normal">Added Home page, optimized ram usage, fixed camera and microphone access.</Run><LineBreak/>
+                <Run FontWeight="SemiBold">0.6.4: </Run>
+                <Run FontWeight="Normal">Github and Gmail page added, reworked page controls, small ui changes, first github public beta.</Run><LineBreak/>
+                <Run FontWeight="SemiBold">0.5.3: </Run>
+                <Run FontWeight="Normal">Migrated to WindowsAppSDK, fixed page overlapping and file picker, reworked icons and ui.</Run><LineBreak/>
+                <Run FontWeight="SemiBold">0.1.1: </Run>
+                <Run FontWeight="Normal">Release for beta testers.</Run><LineBreak/>
+                <Run FontWeight="SemiBold">0.1.0: </Run>
+                <Run FontWeight="Normal">Initial release.</Run><LineBreak/>
+            </TextBlock>
+
+        </StackPanel>
+        
+    </ScrollViewer>
+    
+</Page>
