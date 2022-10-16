@@ -11,7 +11,7 @@
   <Identity
     Name="42063VOLKANOGEDAY.54834662CC7AB"
     Publisher="CN=968DF8E5-7085-45D5-B8D9-0F8ED93008CA"
-    Version="0.7.2.0" />
+    Version="0.7.3.0" />
 
   <Properties>
     <DisplayName>SocialSpace</DisplayName>

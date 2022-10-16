@@ -77,25 +77,13 @@
                         <FontIcon FontFamily="/Assets/FontIconsBrands.ttf#FontIconsBrands" Glyph="&#xf001;"/>
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
-                
+
                 <NavigationViewItem Content="Facebook" Tag="FacebookPage">
                     <NavigationViewItem.Icon>
                         <FontIcon FontFamily="/Assets/FontIconsBrands.ttf#FontIconsBrands" Glyph="&#xf002;"/>
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
-                
-                <NavigationViewItem Content="GitHub" Tag="GithubPage">
-                    <NavigationViewItem.Icon>
-                        <FontIcon FontFamily="/Assets/FontIconsBrands.ttf#FontIconsBrands" Glyph="&#xf003;"/>
-                    </NavigationViewItem.Icon>
-                </NavigationViewItem>
-                
-                <NavigationViewItem Content="Gmail" Tag="GmailPage">
-                    <NavigationViewItem.Icon>
-                        <FontIcon FontFamily="/Assets/FontIconsBrands.ttf#FontIconsBrands" Glyph="&#xf004;"/>
-                    </NavigationViewItem.Icon>
-                </NavigationViewItem>
-                
+
                 <NavigationViewItem Content="Instagram" Tag="InstagramPage">
                     <NavigationViewItem.Icon>
                         <FontIcon FontFamily="/Assets/FontIconsBrands.ttf#FontIconsBrands" Glyph="&#xf005;"/>

@@ -11,9 +11,6 @@
 
                 <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" />
 
-                <!-- settings ui -->
-                <ResourceDictionary Source="ms-appx:///SettingsUI/Themes/Generic.xaml"/>
-
             </ResourceDictionary.MergedDictionaries>
 
             <!-- transparent title bar -->

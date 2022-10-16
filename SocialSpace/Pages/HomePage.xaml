@@ -41,6 +41,8 @@
                 LineHeight="24"
                 TextWrapping="Wrap"
                 Margin="0,0,0,12">
+                <Run FontWeight="SemiBold">0.7.3 (Discontinued): </Run>
+                <Run FontWeight="Normal">Removed GitHub and Gmail pages. Sadly, this is my last update for SocialSpace :(</Run><LineBreak/>
                 <Run FontWeight="SemiBold">0.7.2: </Run>
                 <Run FontWeight="Normal">Added Home page, optimized ram usage, fixed camera and microphone access.</Run><LineBreak/>
                 <Run FontWeight="SemiBold">0.6.4: </Run>

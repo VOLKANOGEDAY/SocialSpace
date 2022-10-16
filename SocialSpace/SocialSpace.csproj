@@ -47,8 +47,6 @@
     <None Remove="DiscordPage.xaml" />
     <None Remove="FacebookPage.xaml" />
     <None Remove="InstagramPage.xaml" />
-    <None Remove="Pages\GithubPage.xaml" />
-    <None Remove="Pages\GmailPage.xaml" />
     <None Remove="Pages\HomePage.xaml" />
     <None Remove="Pages\PinterestPage.xaml" />
     <None Remove="Pages\RedditPage.xaml" />
@@ -59,7 +57,6 @@
     <None Remove="Pages\TwitterPage.xaml" />
     <None Remove="Pages\WhatsappPage.xaml" />
     <None Remove="Pages\YoutubePage.xaml" />
-    <None Remove="SettingsPage.xaml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -73,8 +70,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22621.1" />
-    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.1.4" />
-    <PackageReference Include="SettingsUI" Version="2.1.7" />
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.1.5" />
     <PackageReference Include="WinUIEx" Version="1.8.0" />
     <Manifest Include="$(ApplicationManifest)" />
   </ItemGroup>
@@ -87,16 +83,6 @@
   </ItemGroup>
   <ItemGroup>
     <Page Update="Pages\HomePage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-  </ItemGroup>
-  <ItemGroup>
-    <Page Update="Pages\GithubPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-  </ItemGroup>
-  <ItemGroup>
-    <Page Update="Pages\GmailPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
@@ -152,11 +138,6 @@
   </ItemGroup>
   <ItemGroup>
     <Page Update="Pages\FacebookPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-  </ItemGroup>
-  <ItemGroup>
-    <Page Update="Pages\SettingsPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
